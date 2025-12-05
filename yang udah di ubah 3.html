@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Designer Portfolio Landing</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&amp;family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#45496a",
+            "background-light": "#f1b2b2",
+            "background-dark": "#2d3748",
+            "accent-pink": "#f1b2b2", // Updated from old palette
+            "accent-orange": "#e5857b",
+            "accent-cyan": "#7d8bae", // Renamed from accent-cyan for clarity
+            "light-accent": "#f1b2b2", // Retained for portfolio text
+            "accent-blue": "#7d8bae",
+          },
+          fontFamily: {
+            display: ["Montserrat", "sans-serif"],
+            body: ["Open Sans", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .v-text {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-background-dark font-body text-gray-800 dark:text-gray-300 transition-colors duration-300">
+<div class="relative min-h-screen overflow-x-hidden">
+<nav class="absolute top-0 left-0 right-0 z-20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center">
+<a class="text-white text-2xl font-bold font-display" href="#home">AD</a>
+</div>
+<div class="hidden md:block">
+<div class="ml-10 flex items-baseline space-x-4">
+<a class="text-white hover:text-accent-pink px-3 py-2 rounded-md text-base font-medium transition-colors" href="#about">About Me</a>
+<a class="text-white hover:text-accent-pink px-3 py-2 rounded-md text-base font-medium transition-colors" href="#portfolio">Portfolio</a>
+<a class="text-white hover:text-accent-pink px-3 py-2 rounded-md text-base font-medium transition-colors" href="#blog">Blog &amp; Articles</a>
+<a class="text-white hover:text-accent-pink px-3 py-2 rounded-md text-base font-medium transition-colors" href="#contact">Contact</a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative flex h-[600px] sm:h-[700px] items-center" id="home">
+<div class="absolute inset-0 z-0">
+<div class="h-full w-full flex">
+<div class="w-1/3 sm:w-1/4 h-full bg-accent-blue"></div>
+<div class="w-2/3 sm:w-3/4 h-full bg-primary"></div>
+</div>
+</div>
+<div class="relative z-10 container mx-auto flex items-center px-4">
+<div class="w-full flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="flex flex-col items-center md:items-start text-center md:text-left text-white md:w-1/2 md:ml-[8.333333%]">
+<h1 class="text-5xl sm:text-7xl font-bold leading-tight font-display">Ullya</h1>
+<p class="mt-4 text-2xl sm:text-3xl text-white/90 font-display">Author Webtoon</p>
+<p class="max-w-xl mt-6 text-white/80 text-lg">
+              Menciptakan pengalaman digital yang menarik dan menyenangkan dengan art style yang unik dan membedakan diri dari style art lainnya. 
+            </p>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+<img alt="Portrait of Alex Doe" class="w-full h-full object-cover" src="foto%20profil/1757394429833.O2Cam_20190320153403.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="py-16 sm:py-24" id="about">
+<div class="flex">
+<div class="w-3/4 container mx-auto pr-8 pl-4">
+<div class="max-w-4xl md:ml-[8.333333%]">
+<h2 class="text-4xl font-bold mb-8 text-primary dark:text-white font-display">About Me</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<div>
+<p class="mb-4 leading-relaxed max-w-prose">
+                    Hallo, saya ullya. Saya adalah seorang author webtoon yang memiliki minat dalam menciptakan cerita yang menarik dan menyenangkan. Memiliki pengalaman dalam membuat webtoon selama 4 tahun dan memiliki banyak pengikut di platform media sosial.
+                  </p>
+<p class="leading-relaxed max-w-prose">
+                    Dengan mengikuti trend dan minat pembaca, saya terus berusaha menciptakan cerita yang menarik dan menyenangkan. Selain itu, saya mengikuti art style yang disukai oleh para pembaca, salah satunya adalah style manhwa. 
+                  </p>
+</div>
+<div class="bg-accent-blue p-8 text-white rounded">
+<h3 class="text-2xl font-bold mb-4 font-display">My Competitive Edge</h3>
+<ul class="space-y-3 list-disc list-inside">
+<li>Mahir dalam menggunakan software Clip Studio Paint.</li>
+<li>Fokus dan teliti dalam mengerjakan webtoon.</li>
+<li>Disiplin dalam mengelola waktu dan prioritas.</li>
+<li>Komunikator yang baik dan efektif.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="w-1/4 bg-accent-orange flex items-center justify-start p-4 pl-6">
+<h3 class="v-text h-[250px] text-3xl font-bold text-white font-display">Who I Am</h3>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24 bg-primary text-white" id="portfolio">
+<div class="container mx-auto px-4">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-4xl font-bold text-center mb-12 font-display">Portfolio</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group bg-background-dark rounded-lg overflow-hidden shadow-lg">
+<img alt="Project 1 thumbnail" class="w-full h-60 object-cover group-hover:opacity-80 transition-opacity" src="karya/IMG_1616.PNG"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold text-light-accent font-display">Original Character Rain</h3>
+<p class="mt-2 text-gray-300 max-w-prose">Karakter ini adalah seekor burung yang berubah menjadi manusia akibat seorang perempuan.</p>
+</div>
+</div>
+<div class="group bg-background-dark rounded-lg overflow-hidden shadow-lg">
+<img alt="Project 2 thumbnail" class="w-full h-60 object-cover group-hover:opacity-80 transition-opacity" src="karya/IMG_3653.PNG"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold text-light-accent font-display">Original Character Eyre</h3>
+<p class="mt-2 text-gray-300 max-w-prose">Karakter ini adalah seorang perempuan yang tidak di anggap sama sekali oleh ayahnya.</p>
+</div>
+</div>
+<div class="group bg-background-dark rounded-lg overflow-hidden shadow-lg">
+<img alt="Project 3 thumbnail" class="w-full h-60 object-cover group-hover:opacity-80 transition-opacity" src="karya/IMG_3654.PNG"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold text-light-accent font-display">Fanart Character Game Sky</h3>
+<p class="mt-2 text-gray-300 max-w-prose">Fanart karakter sky dengan memakai style sendiri.</p>
+</div>
+</div>
+<div class="group bg-background-dark rounded-lg overflow-hidden shadow-lg">
+<img alt="Project 4 thumbnail" class="w-full h-60 object-cover group-hover:opacity-80 transition-opacity" src="karya/Tak%20berjudul123_20250429061207.png"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold text-light-accent font-display">Fanart Character Webtoon</h3>
+<p class="mt-2 text-gray-300 max-w-prose">Menggambar ulang Female Lead dari webtoon Like Mother Like Daughter.</p>
+</div>
+</div>
+<div class="group bg-background-dark rounded-lg overflow-hidden shadow-lg">
+<img alt="Project 5 thumbnail" class="w-full h-60 object-cover group-hover:opacity-80 transition-opacity" src="karya/Tak%20berjudul12_20250906081835.png"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold text-light-accent font-display">Fanart Character Webtoon 2</h3>
+<p class="mt-2 text-gray-300 max-w-prose">Fanart kalakter Male Lead dari salah satu webtoon Dorm Du.</p>
+</div>
+</div>
+<div class="group bg-background-dark rounded-lg overflow-hidden shadow-lg">
+<img alt="Project 6 thumbnail" class="w-full h-60 object-cover group-hover:opacity-80 transition-opacity" src="karya/zepeto_20250906082052.png"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold text-light-accent font-display">Fanart Character Game Zepeto</h3>
+<p class="mt-2 text-gray-300 max-w-prose">Fanart karakter zepeto dengan memakai style sendiri.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24" id="blog">
+<div class="flex flex-row-reverse">
+<div class="w-3/4 container mx-auto pl-8 pr-4">
+<div class="max-w-4xl md:ml-[8.333333%]">
+<h2 class="text-4xl font-bold mb-8 text-primary dark:text-white font-display">Blog &amp; Articles</h2>
+<div class="space-y-12">
+<article>
+<h3 class="text-2xl font-bold text-accent-blue font-display">Membuat Poster Film menggunakan Canva</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-3">Published on September 26, 2025</p>
+<p class="leading-relaxed max-w-prose">Dengan bantuan AI kita membuat rupa manusia agar sesuai dengan judul film yang kita buat sendiri, lalu kita mendesainnya menggunakan canva semenarik mungkin.</p>
+<a class="text-accent-orange font-bold hover:underline mt-2 inline-block" href="https://www.youtube.com">Read More ›</a>
+</article>
+<article>
+<h3 class="text-2xl font-bold text-accent-blue font-display">Membuat Grafik Klip dari PowerPoint</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-3">Published on October 17, 2025</p>
+<p class="leading-relaxed max-w-prose">Membuat video menggunakan PowerPoint dengan mengatur durasi slide dan animasinya. Tidak hanya gambar tetapi kita harus memberi lirik lagu sesuai tempo musik.</p>
+<a class="text-accent-orange font-bold hover:underline mt-2 inline-block" href="https://www.youtube.com">Read More ›</a>
+</article>
+</div>
+</div>
+</div>
+<div class="w-1/4 bg-accent-pink flex items-center justify-start p-4">
+<h3 class="v-text h-[250px] text-3xl font-bold text-primary font-display">My Thoughts</h3>
+</div>
+</div>
+</section>
+<section class="flex h-[500px]" id="contact">
+<div class="w-1/2 bg-accent-blue flex flex-col items-center justify-center p-8 text-white text-center">
+<div class="max-w-sm">
+<h2 class="text-4xl font-bold mb-4 font-display">Get In Touch</h2>
+<p class="mb-8 max-w-prose">
+              Have a project in mind or just want to say hello? I'd love to hear from you.
+            </p>
+<div class="flex space-x-6 justify-center">
+<a class="hover:opacity-80 transition-opacity" href="#">
+<svg class="text-white" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+</svg>
+</a>
+<a class="hover:opacity-80 transition-opacity" href="mailto:hello@alexdoe.com">
+<svg class="text-white" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="w-1/2 bg-background-light dark:bg-background-dark p-8 flex items-center justify-center">
+<form class="w-full max-w-md">
+<div class="space-y-6">
+<input class="w-full bg-white dark:bg-gray-700 border-2 border-primary/20 dark:border-gray-600 rounded-md py-3 px-4 focus:ring-accent-orange focus:border-accent-orange font-body" placeholder="Your Email" required="" type="email"/>
+<textarea class="w-full bg-white dark:bg-gray-700 border-2 border-primary/20 dark:border-gray-600 rounded-md py-3 px-4 focus:ring-accent-orange focus:border-accent-orange font-body" placeholder="Your Message" required="" rows="5"></textarea>
+<button class="w-full bg-primary text-white py-3 px-6 rounded-md font-bold hover:bg-opacity-90 transition-colors" type="submit">Send Message</button>
+</div>
+</form>
+</div>
+</section>
+<footer class="bg-primary text-white/70 text-center py-6">
+<p>© 2025 Ullya. All Rights Reserved.</p>
+</footer>
+</main>
+</div>
+</body></html>
